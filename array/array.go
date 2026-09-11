@@ -91,4 +91,13 @@ func main(){
 	sortedArray := bubbleSort(randomArray)
 	printArray100(sortedArray)
 
+	heading("Multi dimensions arrays")
+	var multiArray [3][3]int
+	for i := 0; i < 3; i++ {
+		for j := 0; j < 3; j++ {
+			multiArray[i][j] = i * j
+			fmt.Printf("multiArray[%d][%d] = %d\n", i, j, multiArray[i][j])
+		}
+	}
+
 }
